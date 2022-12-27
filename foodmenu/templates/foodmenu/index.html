@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+
+<h1>This is the template</h1>
+
+{% for item in food_items %}
+<ul>
+    <a href="{% url 'food:detail' item.id %}"><li>{{ item.id }} --> {{ item.title }}</li></a>
+</ul>
+{% endfor %}
