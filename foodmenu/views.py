@@ -49,7 +49,6 @@ class CreateFood(CreateView):
         return super().form_valid(form)
 
 
-
 def update_food(request, pk):
     item = Food.objects.get(pk=pk)
     form = FoodForm(request.POST or None, instance=item)
