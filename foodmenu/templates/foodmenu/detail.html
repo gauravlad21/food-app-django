@@ -1,9 +1,10 @@
 {% extends 'foodmenu/base.html' %}
 {% block body %}
 <ul>
-    <img class="card" height="150px" width="150px" src="{{ item.image }}">
-    <li>{{ item.title }}</li>
-    <li>{{ item.desc }}</li>
-    <li>INR {{ item.price }}</li>
+    <img class="card" height="150px" width="150px" src="{{ object.image }}">
+    <li>{{ object.title }}</li>
+    <li>{{ object.desc }}</li>
+    <li>INR {{ object.price }}</li>
+    <li>{{ object.user_name }}</li>
 </ul>
 {% endblock %}
